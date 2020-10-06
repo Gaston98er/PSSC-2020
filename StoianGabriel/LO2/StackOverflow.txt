@@ -1,0 +1,14 @@
+Events : 
+-create question
+-delete question
+-add response
+-delete response
+-vote question
+-vote response
+-receive reputation
+
+Context :
+-Reponse context
+-Question context
+-Vote context
+-Reputation context
