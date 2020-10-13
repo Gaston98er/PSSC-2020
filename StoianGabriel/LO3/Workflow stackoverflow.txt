@@ -1,0 +1,22 @@
+Workflow : 
+
+Question context : 
+
+	workflow "create question"
+		triggered by: "create question request received"
+		input: "question form" (title, body, tags)
+		other inputs: "similar questions"
+		output: "question created" event
+		side effects: notification for question created
+
+input: "question form"
+output: "question created" event or invalid question
+
+validate question title
+validate question body
+validate question tags
+validate quality standards (stackoverflow standards for asking a question)
+if all validations passed 
+	return validated question form
+else
+	return validation error
